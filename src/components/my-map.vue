@@ -25,7 +25,7 @@ export default {
   methods:{
     update:function() {
        this.url = this.baseUrl + 'center=' + this.latitude +',' + this.longitude + '&zoom=17&size=800x800&maptype=roadmap&markers=color:red%7Clabel:%7C'+ 
-       this.latitude +',' + this.longitude + '&key=AIzaSyBL-CBfO3UlbqKM6nasJAr6Sf9TGnm6CLQ';
+       this.latitude +',' + this.longitude + '&YOUR_API_KEY';
        
     }
   },
@@ -33,7 +33,7 @@ export default {
   //to add the url property to the Vue instance and update the native DOM
   mounted(){
     this.url = this.baseUrl + 'center=' + this.latitude +',' + this.longitude + '&zoom=17&size=800x800&maptype=roadmap&markers=color:red%7Clabel:%7C' + 
-    this.latitude +',' + this.longitude + '&key=AIzaSyBL-CBfO3UlbqKM6nasJAr6Sf9TGnm6CLQ';
+    this.latitude +',' + this.longitude + '&YOUR_API_KEY';
   }
   }
 </script>
